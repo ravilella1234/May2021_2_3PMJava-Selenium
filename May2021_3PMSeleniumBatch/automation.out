@@ -1,0 +1,12 @@
+Loading the Files......
+Launched the Browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selected the option Books By using Locator :- searchDropdownBox
+Entered the text HArry Potter By using Locator :- twotabsearchtextbox
+Clicked on Amazon Search Button By using Locaotr :- //input[@id='nav-search-submit-button']
+Loading the Files......
+Launched the Browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selected the option Books By using Locator :- searchDropdownBox
+Entered the text HArry Potter By using Locator :- twotabsearchtextbox
+Clicked on Amazon Search Button By using Locaotr :- //input[@id='nav-search-submit-button']
