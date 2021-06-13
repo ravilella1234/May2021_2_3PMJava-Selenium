@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demoproject.June3PMSelenium.LinksTesting1">
+      <class name="demoproject.June3PMSelenium.TestDependency">
         <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="linktesting1"/>
+          <include name="blue"/>
+          <include name="white"/>
+          <include name="orange"/>
+          <include name="green"/>
         </methods>
-      </class> <!-- demoproject.June3PMSelenium.LinksTesting1 -->
+      </class> <!-- demoproject.June3PMSelenium.TestDependency -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

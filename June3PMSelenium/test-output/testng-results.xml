@@ -1,193 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="2" failed="0" ignored="0" total="4" passed="2">
   <reporter-output>
-    <line>
-      <![CDATA[Clicked on Image Link]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Image Link]]>
-    </line>
   </reporter-output>
-  <suite name="AutomationSuite" duration-ms="302105" started-at="2021-06-12T11:30:44Z" finished-at="2021-06-12T11:35:46Z">
+  <suite name="Default suite" duration-ms="149" started-at="2021-06-13T11:07:00Z" finished-at="2021-06-13T11:07:00Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="163680" started-at="2021-06-12T11:30:44Z" finished-at="2021-06-12T11:33:27Z">
-      <class name="demoproject.June3PMSelenium.TNG_002">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:demoproject.June3PMSelenium.TNG_002@436a4e4b]" name="startProcess" is-config="true" duration-ms="23612" started-at="2021-06-12T11:32:26Z" finished-at="2021-06-12T11:32:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="149" started-at="2021-06-13T11:07:00Z" finished-at="2021-06-13T11:07:00Z">
+      <class name="demoproject.June3PMSelenium.TestDependency">
+        <test-method status="PASS" signature="orange()[pri:1, instance:demoproject.June3PMSelenium.TestDependency@5ef60048]" name="orange" duration-ms="21" started-at="2021-06-13T11:07:00Z" finished-at="2021-06-13T11:07:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:demoproject.June3PMSelenium.TNG_002@436a4e4b]" name="amazon" duration-ms="30290" started-at="2021-06-12T11:32:50Z" finished-at="2021-06-12T11:33:20Z">
+        </test-method> <!-- orange -->
+        <test-method status="PASS" signature="white()[pri:2, instance:demoproject.June3PMSelenium.TestDependency@5ef60048]" name="white" duration-ms="3" started-at="2021-06-13T11:07:00Z" depends-on-methods="demoproject.June3PMSelenium.TestDependency.orange" finished-at="2021-06-13T11:07:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:demoproject.June3PMSelenium.TNG_002@436a4e4b]" name="endProcess" is-config="true" duration-ms="6910" started-at="2021-06-12T11:33:20Z" finished-at="2021-06-12T11:33:27Z">
+        </test-method> <!-- white -->
+        <test-method status="SKIP" signature="blue()[pri:3, instance:demoproject.June3PMSelenium.TestDependency@5ef60048]" name="blue" duration-ms="3" started-at="2021-06-13T11:07:00Z" depends-on-methods="demoproject.June3PMSelenium.TestDependency.white" finished-at="2021-06-13T11:07:00Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[blue test is skipped...]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: blue test is skipped...
+at demoproject.June3PMSelenium.TestDependency.blue(TestDependency.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- demoproject.June3PMSelenium.TNG_002 -->
-      <class name="demoproject.June3PMSelenium.LinksTesting1">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:demoproject.June3PMSelenium.LinksTesting1@6295d394]" name="setup" is-config="true" duration-ms="21309" started-at="2021-06-12T11:30:44Z" finished-at="2021-06-12T11:31:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- blue -->
+        <test-method status="SKIP" signature="green()[pri:4, instance:demoproject.June3PMSelenium.TestDependency@5ef60048]" name="green" duration-ms="0" started-at="2021-06-13T11:07:00Z" depends-on-methods="demoproject.June3PMSelenium.TestDependency.blue" finished-at="2021-06-13T11:07:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestDependency.green()[pri:4, instance:demoproject.June3PMSelenium.TestDependency@5ef60048] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestDependency.green()[pri:4, instance:demoproject.June3PMSelenium.TestDependency@5ef60048] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="linktesting1()[pri:0, instance:demoproject.June3PMSelenium.LinksTesting1@6295d394]" name="linktesting1" duration-ms="1243" started-at="2021-06-12T11:31:05Z" finished-at="2021-06-12T11:31:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked on Image Link]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- linktesting1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:demoproject.June3PMSelenium.LinksTesting1@6295d394]" name="tearDown" is-config="true" duration-ms="8485" started-at="2021-06-12T11:31:06Z" finished-at="2021-06-12T11:31:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- demoproject.June3PMSelenium.LinksTesting1 -->
-      <class name="demoproject.June3PMSelenium.RadioButton1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:demoproject.June3PMSelenium.RadioButton1@475e586c]" name="beforeMethod" is-config="true" duration-ms="33703" started-at="2021-06-12T11:31:15Z" finished-at="2021-06-12T11:31:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioButtonTest()[pri:0, instance:demoproject.June3PMSelenium.RadioButton1@475e586c]" name="radioButtonTest" duration-ms="4532" started-at="2021-06-12T11:31:48Z" finished-at="2021-06-12T11:31:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioButtonTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demoproject.June3PMSelenium.RadioButton1@475e586c]" name="afterMethod" is-config="true" duration-ms="1678" started-at="2021-06-12T11:31:53Z" finished-at="2021-06-12T11:31:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- demoproject.June3PMSelenium.RadioButton1 -->
-      <class name="demoproject.June3PMSelenium.CheckBox1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:demoproject.June3PMSelenium.CheckBox1@657c8ad9]" name="beforeMethod" is-config="true" duration-ms="28730" started-at="2021-06-12T11:31:55Z" finished-at="2021-06-12T11:32:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:demoproject.June3PMSelenium.CheckBox1@657c8ad9]" name="checkboxTest" duration-ms="273" started-at="2021-06-12T11:32:23Z" finished-at="2021-06-12T11:32:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demoproject.June3PMSelenium.CheckBox1@657c8ad9]" name="afterMethod" is-config="true" duration-ms="2842" started-at="2021-06-12T11:32:24Z" finished-at="2021-06-12T11:32:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- demoproject.June3PMSelenium.CheckBox1 -->
-    </test> <!-- ChromeTest -->
-    <test name="FirefoxTest" duration-ms="138399" started-at="2021-06-12T11:33:27Z" finished-at="2021-06-12T11:35:46Z">
-      <class name="demoproject.June3PMSelenium.TNG_002">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:demoproject.June3PMSelenium.TNG_002@7ff95560]" name="startProcess" is-config="true" duration-ms="13673" started-at="2021-06-12T11:35:18Z" finished-at="2021-06-12T11:35:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:demoproject.June3PMSelenium.TNG_002@7ff95560]" name="amazon" duration-ms="5691" started-at="2021-06-12T11:35:32Z" finished-at="2021-06-12T11:35:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:demoproject.June3PMSelenium.TNG_002@7ff95560]" name="endProcess" is-config="true" duration-ms="8218" started-at="2021-06-12T11:35:37Z" finished-at="2021-06-12T11:35:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- demoproject.June3PMSelenium.TNG_002 -->
-      <class name="demoproject.June3PMSelenium.LinksTesting1">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:demoproject.June3PMSelenium.LinksTesting1@2cbb3d47]" name="setup" is-config="true" duration-ms="45418" started-at="2021-06-12T11:33:27Z" finished-at="2021-06-12T11:34:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="linktesting1()[pri:0, instance:demoproject.June3PMSelenium.LinksTesting1@2cbb3d47]" name="linktesting1" duration-ms="1696" started-at="2021-06-12T11:34:13Z" finished-at="2021-06-12T11:34:14Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked on Image Link]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- linktesting1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:demoproject.June3PMSelenium.LinksTesting1@2cbb3d47]" name="tearDown" is-config="true" duration-ms="5710" started-at="2021-06-12T11:34:14Z" finished-at="2021-06-12T11:34:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- demoproject.June3PMSelenium.LinksTesting1 -->
-      <class name="demoproject.June3PMSelenium.RadioButton1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:demoproject.June3PMSelenium.RadioButton1@527e5409]" name="beforeMethod" is-config="true" duration-ms="23296" started-at="2021-06-12T11:34:20Z" finished-at="2021-06-12T11:34:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioButtonTest()[pri:0, instance:demoproject.June3PMSelenium.RadioButton1@527e5409]" name="radioButtonTest" duration-ms="1095" started-at="2021-06-12T11:34:43Z" finished-at="2021-06-12T11:34:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioButtonTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demoproject.June3PMSelenium.RadioButton1@527e5409]" name="afterMethod" is-config="true" duration-ms="7014" started-at="2021-06-12T11:34:44Z" finished-at="2021-06-12T11:34:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- demoproject.June3PMSelenium.RadioButton1 -->
-      <class name="demoproject.June3PMSelenium.CheckBox1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:demoproject.June3PMSelenium.CheckBox1@1198b989]" name="beforeMethod" is-config="true" duration-ms="17260" started-at="2021-06-12T11:34:51Z" finished-at="2021-06-12T11:35:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:demoproject.June3PMSelenium.CheckBox1@1198b989]" name="checkboxTest" duration-ms="1651" started-at="2021-06-12T11:35:09Z" finished-at="2021-06-12T11:35:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demoproject.June3PMSelenium.CheckBox1@1198b989]" name="afterMethod" is-config="true" duration-ms="7664" started-at="2021-06-12T11:35:10Z" finished-at="2021-06-12T11:35:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- demoproject.June3PMSelenium.CheckBox1 -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- AutomationSuite -->
+        </test-method> <!-- green -->
+      </class> <!-- demoproject.June3PMSelenium.TestDependency -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
