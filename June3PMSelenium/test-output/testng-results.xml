@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33699" started-at="2021-06-16T10:08:44Z" finished-at="2021-06-16T10:09:18Z">
+  <suite name="Default suite" duration-ms="36547" started-at="2021-06-22T10:26:41Z" finished-at="2021-06-22T10:27:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33699" started-at="2021-06-16T10:08:44Z" finished-at="2021-06-16T10:09:18Z">
-      <class name="assertions.SoftAssertDemo">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:assertions.SoftAssertDemo@7920ba90]" name="beforeMethod" is-config="true" duration-ms="12302" started-at="2021-06-16T10:08:44Z" finished-at="2021-06-16T10:08:56Z">
+    <test name="Default test" duration-ms="36547" started-at="2021-06-22T10:26:41Z" finished-at="2021-06-22T10:27:17Z">
+      <class name="excelDataDriven.DataManagentFinalVersion">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.DataManagentFinalVersion@55a561cf]" name="f" duration-ms="34695" started-at="2021-06-22T10:26:42Z" data-provider="getData" finished-at="2021-06-22T10:27:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=loginSuccess, RunMode=Y, Pasword=zoho2015, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="amazon()[pri:0, instance:assertions.SoftAssertDemo@7920ba90]" name="amazon" duration-ms="21254" started-at="2021-06-16T10:08:56Z" finished-at="2021-06-16T10:09:18Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.DataManagentFinalVersion@55a561cf]" name="f" duration-ms="3" started-at="2021-06-22T10:27:17Z" data-provider="getData" finished-at="2021-06-22T10:27:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=loginSuccess, RunMode=N, Pasword=P1, UserName=U1, Browser=firefox}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[The following asserts failed:
-Both Links are not equal... expected [true] but found [false],
-error1 expected [true] but found [false],
-error3 expected [true] but found [false],
-error4 expected [true] but found [false]]]>
+              <![CDATA[Testcase is Skipped as set-to No...]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Both Links are not equal... expected [true] but found [false],
-error1 expected [true] but found [false],
-error3 expected [true] but found [false],
-error4 expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at assertions.SoftAssertDemo.amazon(SoftAssertDemo.java:46)
+              <![CDATA[org.testng.SkipException: Testcase is Skipped as set-to No...
+at excelDataDriven.DataManagentFinalVersion.f(DataManagentFinalVersion.java:20)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -55,15 +60,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:assertions.SoftAssertDemo@7920ba90]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-16T10:09:18Z" finished-at="2021-06-16T10:09:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- assertions.SoftAssertDemo -->
+        </test-method> <!-- f -->
+      </class> <!-- excelDataDriven.DataManagentFinalVersion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

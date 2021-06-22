@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 16 15:38:44 IST 2021</td>
+<td>Started on:</td><td>Tue Jun 22 15:56:41 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>33 seconds (33699 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36547 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,22 +67,30 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='assertions.SoftAssertDemo.amazon()'><b>amazon</b><br>Test class: assertions.SoftAssertDemo</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Both Links are not equal... expected [true] but found [false],
-	error1 expected [true] but found [false],
-	error3 expected [true] but found [false],
-	error4 expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at assertions.SoftAssertDemo.amazon(SoftAssertDemo.java:46)
+<td title='excelDataDriven.DataManagentFinalVersion.f()'><b>f</b><br>Test class: excelDataDriven.DataManagentFinalVersion<br>Parameters: {ExpectedResult=loginSuccess, RunMode=Y, Pasword=zoho2015, UserName=ravilella.2015@gmail.com, Browser=chrome}</td>
+<td></td>
+<td>34</td>
+<td>excelDataDriven.DataManagentFinalVersion@55a561cf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='excelDataDriven.DataManagentFinalVersion.f()'><b>f</b><br>Test class: excelDataDriven.DataManagentFinalVersion<br>Parameters: {ExpectedResult=loginSuccess, RunMode=N, Pasword=P1, UserName=U1, Browser=firefox}</td>
+<td><div><pre>org.testng.SkipException: Testcase is Skipped as set-to No...
+	at excelDataDriven.DataManagentFinalVersion.f(DataManagentFinalVersion.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -108,14 +116,9 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace343563528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace343563528'><pre>java.lang.AssertionError: The following asserts failed:
-	Both Links are not equal... expected [true] but found [false],
-	error1 expected [true] but found [false],
-	error3 expected [true] but found [false],
-	error4 expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at assertions.SoftAssertDemo.amazon(SoftAssertDemo.java:46)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1594039997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594039997'><pre>org.testng.SkipException: Testcase is Skipped as set-to No...
+	at excelDataDriven.DataManagentFinalVersion.f(DataManagentFinalVersion.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -142,8 +145,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>21</td>
-<td>assertions.SoftAssertDemo@7920ba90</td></tr>
+<td>0</td>
+<td>excelDataDriven.DataManagentFinalVersion@55a561cf</td></tr>
 </table><p>
 </body>
 </html>
