@@ -5,9 +5,9 @@
     <classes>
       <class name="pom.POM_001">
         <methods>
+          <include name="registration"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="f"/>
         </methods>
       </class> <!-- pom.POM_001 -->
     </classes>

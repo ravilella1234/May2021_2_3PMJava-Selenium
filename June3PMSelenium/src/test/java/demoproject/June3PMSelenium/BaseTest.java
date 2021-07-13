@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Date;
 import java.util.Properties;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -18,6 +20,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -98,6 +102,7 @@ public class BaseTest
 			
 			driver = new FirefoxDriver(option);
 		}
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
 	public static void navigateUrl(String url)
@@ -183,6 +188,29 @@ public class BaseTest
 		FileHandler.copy(scrFile, new File(projectPath+"\\failurescreenshots\\"+dateFormat));
 		
 		test.log(LogStatus.INFO, "Screenshot --->" +test.addScreenCapture(projectPath+"\\failurescreenshots\\"+dateFormat));	
+	}
+	
+	
+	public void waitForElement(WebElement locator, int timeInSeconds, String waitType) 
+	{
+		WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
+		
+		if(waitType.equals("elementToVisible"))
+		{
+			wait.until(ExpectedConditions.visibilityOf(locator));
+		}
+		else if(waitType.equals("elementToClickable"))
+		{
+			wait.until(ExpectedConditions.elementToBeClickable(locator));
+		}
+			
+	}
+	
+	public int randomNum() 
+	{
+		Random r = new Random();
+		int rNum = r.nextInt(99999);
+		return rNum;
 	}
 
 
