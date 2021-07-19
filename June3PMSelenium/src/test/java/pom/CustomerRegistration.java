@@ -50,13 +50,13 @@ public class CustomerRegistration extends BaseTest
 	{
 		signIn.click();	
 		//Thread.sleep(8000);
-		waitForElement(custEmail,60,"elementToVisible");
+		//waitForElement(custEmail,60,"elementToVisible");
 		//custEmail.sendKeys("qatest457409@gmail.com");
 		custEmail.sendKeys(p.getProperty("firstname")+p.getProperty("lastname")+randomNum()+p.getProperty("domain"));
 		
 		Submit.click();	
 		//Thread.sleep(8000);
-		waitForElement(Title_gen1, 30,"elementToClickable");
+		//waitForElement(Title_gen1, 30,"elementToClickable");
 		Title_gen1.click();
 		
 		FirstName.sendKeys("qa");

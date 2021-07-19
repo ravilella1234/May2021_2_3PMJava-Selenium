@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69275" started-at="2021-07-13T10:32:28Z" finished-at="2021-07-13T10:33:37Z">
+  <suite name="Default suite" duration-ms="18227" started-at="2021-07-19T10:24:19Z" finished-at="2021-07-19T10:24:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69275" started-at="2021-07-13T10:32:28Z" finished-at="2021-07-13T10:33:37Z">
-      <class name="pom.POM_001">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:pom.POM_001@1a0dcaa]" name="beforeMethod" is-config="true" duration-ms="59022" started-at="2021-07-13T10:32:28Z" finished-at="2021-07-13T10:33:27Z">
+    <test name="Default test" duration-ms="18227" started-at="2021-07-19T10:24:19Z" finished-at="2021-07-19T10:24:38Z">
+      <class name="switches.FileUpload">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:switches.FileUpload@45dd4eda]" name="beforeMethod" is-config="true" duration-ms="14694" started-at="2021-07-19T10:24:19Z" finished-at="2021-07-19T10:24:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="registration()[pri:0, instance:pom.POM_001@1a0dcaa]" name="registration" duration-ms="10158" started-at="2021-07-13T10:33:27Z" finished-at="2021-07-13T10:33:37Z">
+        <test-method status="PASS" signature="fileupload()[pri:0, instance:switches.FileUpload@45dd4eda]" name="fileupload" duration-ms="3452" started-at="2021-07-19T10:24:34Z" finished-at="2021-07-19T10:24:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:pom.POM_001@1a0dcaa]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-07-13T10:33:37Z" finished-at="2021-07-13T10:33:37Z">
+        </test-method> <!-- fileupload -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:switches.FileUpload@45dd4eda]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-07-19T10:24:38Z" finished-at="2021-07-19T10:24:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- pom.POM_001 -->
+      </class> <!-- switches.FileUpload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,6 +1,7 @@
 package pom;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -22,6 +23,7 @@ public class POM_001 extends BaseTest
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com/");
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
   
   @Test(enabled = false)
