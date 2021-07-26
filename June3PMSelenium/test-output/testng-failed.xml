@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
     <classes>
-      <class name="pom.POM_001">
+      <class name="grid.NewTest">
         <methods>
-          <include name="registration"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- pom.POM_001 -->
+      </class> <!-- grid.NewTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
