@@ -1,0 +1,16 @@
+
+What is a Framework ? methodolgy
+
+Objectives
+-----------
+1) Maven Project
+2) Implement multiple TC's & allows to run in Batch Mode
+3) Generate Html Reports + screenshots for failure
+4) Sending the Email Reports to team members
+5) Manage the test data - xls /Json / Properties / XML
+6) Run only the specific TC's
+7) Re-Usability
+8) Compatability with Changing with client requirments
+9) GRID - parallel
+10) Dependencies b/w Tests
+11) GIT + Jenkins
