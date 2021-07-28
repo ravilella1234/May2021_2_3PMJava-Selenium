@@ -12,7 +12,7 @@ public class ValidationKeywords extends GenericKeywords
 		
 	}
 	
-	public void validateElementPresent()
+	public void validateElementPresent(String locator)
 	{
 		
 	}
